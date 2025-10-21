@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAMA Restaurant</title>
+  <!-- Tailwind CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+       @media all and (max-width: 480px) { }
+      
+       @media all and (min-width: 480px) and (max-width: 768px) { }
+       @media all and (min-width: 768px) and (max-width: 1024px) {
+        }
+       @media all and (min-width: 1024px) and (max-width: 1280px) { }
+    </style>
+</head>
+
+<body class="font-sans text-teal-800">
+
+  <!-- Navbar -->
+  <nav class="bg-teal-900 text-white">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-2xl font-bold">BAMA's Kitchen</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#menu" class="hover:text-yellow-400">Menu</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home"
+    class="bg-cover bg-center h-[80vh] flex flex-col justify-center items-center text-white text-center"
+    style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to BAMA's Kitchen</h1>
+    <p class="text-lg md:text-xl mb-6">Delicious meals made with love and passion</p>
+    <a href="#menu" class="bg-yellow-500 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-yellow-400">
+     Check Menu </a>
+  </section>
+
+<!-- Menu Section -->
+  <section id="menu" class="py-12 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10 text-green-700">Our Menu</h2>
+    <div class="container mx-auto grid md:grid-cols-3 gap-8">
+
+      <!-- Egusi Soup -->
+      <div class="bg-gray-100 p-5 rounded-lg shadow-md">
+        <img src="https://i.pinimg.com/736x/19/55/0e/19550e0c5716cd2f35d5bc7971a9cb17.jpg" alt="Egusi Soup" class="rounded-md mb-4 h-48 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2">Egusi Soup</h3>
+        <p class="text-gray-600 mb-2">Rich melon seed soup cooked with vegetables and assorted meat. Perfect with pounded yam or eba.</p>
+        <p class="text-green-700 font-bold">₦2,500</p>
+      </div>
+
+      <!-- Ofada Rice -->
+      <div class="bg-gray-100 p-5 rounded-lg shadow-md">
+        <img src="https://i.pinimg.com/1200x/a0/cf/74/a0cf74a853dba210f16a6e085b2822cd.jpg" alt="Ofada Rice" class="rounded-md mb-4 h-48 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2">Ofada Rice</h3>
+        <p class="text-gray-600 mb-2">Local Ofada rice served with spicy Ayamase sauce and boiled egg a true Yoruba delicacy.</p>
+        <p class="text-green-700 font-bold">₦3,000</p>
+      </div>
+
+      <!-- Suya -->
+      <div class="bg-gray-100 p-5 rounded-lg shadow-md">
+        <img src="https://i.pinimg.com/1200x/7d/e5/e6/7de5e60f3fabebd4530ee9dd1f670e13.jpg" alt="Suya" class="rounded-md mb-4 h-48 w-full object-cover">
+        <h3 class="text-xl font-semibold mb-2">Spaghetti</h3>
+        <p class="text-gray-600 mb-2">Spicy stir-fried spaghetti with grilled chicken, sautéed vegetables, and a signature pepper sauce.</p>
+        <p class="text-green-700 font-bold">₦1,800</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <img
+        src="https://i.pinimg.com/736x/85/f8/47/85f847274fff6f4b49454c5e8aa652e3.jpg"
+        alt="Restaurant"
+        class="rounded-lg shadow-md object-cover w-full h-[60rem]"/>
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About BAMA's Kitchen</h2>
+        <p class="text-gray-700 leading-relaxed">
+         At BAMA's Kitchen, we take pride in celebrating the rich culinary heritage of Nigeria through authentic flavors and premium-quality ingredients. Our menu features a curated selection of traditional favorites, including <b>Egusi Soup, Spaghetti, and Ofada Rice</b>, each prepared with meticulous care to preserve their original taste and aroma.
+         We are committed to delivering an exceptional dining experience  blending tradition with modern hospitality. Whether you’re joining us for a hearty meal or a quick takeaway, BAMA's Kitchen offers a warm atmosphere, excellent service, and food that truly captures the essence of Nigerian cuisine.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
+      <form class="max-w-xl mx-auto bg-white shadow-md p-8 rounded-lg">
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">Your Name</label>
+          <input
+            type="text"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            placeholder="Name"
+            required/>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">Email</label>
+          <input
+            type="email"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            placeholder="Email"
+            required/>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">Send Message</label>
+          <textarea
+            rows="4"
+            type="text"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            placeholder="Send Message..."
+            required>
+        </textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-teal-500 hover:bg-gray-400 text-gray-900 font-semibold py-3 rounded-md">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-900 text-white py-6 text-center">
+    <p>© 2025 Taste Haven. All Rights Reserved.</p>
+    <div class="mt-3 space-x-5">
+      <a href="#" class="text-yellow-400 hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-yellow-400 hover:text-yellow-300"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-yellow-400 hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
